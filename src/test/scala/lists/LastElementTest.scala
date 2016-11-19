@@ -6,6 +6,8 @@ import org.scalatest.{FlatSpec, Matchers}
   * Created by domesc on 23/10/16.
   */
 class LastElementTest extends FlatSpec with Matchers {
+  behavior of "LastElementTest"
+
   it should "find last element in a non empty list" in {
     val list = List(1, 1, 2, 3, 5, 8)
     val last = LastElement.find(list)

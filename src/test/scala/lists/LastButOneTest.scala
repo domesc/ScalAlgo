@@ -7,6 +7,8 @@ import org.scalatest.{FlatSpec, Matchers}
   */
 class LastButOneTest extends FlatSpec with Matchers {
 
+  behavior of "LastButOneTest"
+
   it should "find last but one element in a non empty list" in {
     val list = List(1, 1, 2, 3, 5, 8)
     val last = LastButOne.find(list)

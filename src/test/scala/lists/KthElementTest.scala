@@ -6,6 +6,8 @@ import org.scalatest.{FlatSpec, Matchers}
   * Created by domesc on 23/10/16.
   */
 class KthElementTest extends FlatSpec with Matchers {
+  behavior of "KthElement"
+
   it should "find nth element in a non empty list" in {
     val list = List(1, 1, 2, 3, 5, 8)
     val last = KthElement.find(list, 3)
